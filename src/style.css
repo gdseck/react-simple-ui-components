@@ -1,0 +1,41 @@
+.slider-container {
+  width: 800px;
+  height: 200px;
+  background: gray;
+  position: relative;
+}
+
+.slider-wrapper {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: red;
+  height: 25%;
+  width: 75%;
+}
+
+.slider {
+    height: 3px;
+    width: 100%;
+    background: black;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.handleWrapper {
+  display: inline-block;
+  height: 100%;
+}
+
+.handle {
+    position: absolute;
+    padding-bottom: 5%;
+    background: yellow;
+    width: 5%;
+    left: 0;
+    display: inline-block;
+    transform: translate(0, -50%);
+    top: 50%;
+    z-index: 30;
+}
