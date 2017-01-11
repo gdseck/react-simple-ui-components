@@ -1,11 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import Slider from 'src/react-ui-slider'
-
-console.log(Slider)
+import Container from './container'
 
 ReactDOM.render(
-  <Slider />,
+  <Container />,
   document.getElementById('root')
 )

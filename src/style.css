@@ -1,26 +1,27 @@
-.slider-container {
-  width: 800px;
-  height: 200px;
-  background: gray;
-  position: relative;
+.slider-wrapper {
+  box-sizing: border-box;
+  padding: 10px;
 }
 
-.slider-wrapper {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  background: red;
-  height: 25%;
-  width: 75%;
+.slider-events {
+  position: relative;
+  padding: 0 5px;
+}
+
+.slider-track {
+  display: flex;
+  position: relative;
+  width: 100%;
 }
 
 .slider {
+    position: absolute;
+    left: 0;
+    top: 50%;
     height: 3px;
+    transform: translate(0, -50%);
     width: 100%;
     background: black;
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
 }
 
 .handleWrapper {
@@ -29,13 +30,9 @@
 }
 
 .handle {
-    position: absolute;
-    padding-bottom: 5%;
-    background: yellow;
-    width: 5%;
-    left: 0;
+    position: relative;
     display: inline-block;
-    transform: translate(0, -50%);
-    top: 50%;
     z-index: 30;
+    width: 20px;
+    height: 20px;
 }
